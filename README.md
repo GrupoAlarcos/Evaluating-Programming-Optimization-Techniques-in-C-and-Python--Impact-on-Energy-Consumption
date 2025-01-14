@@ -15,10 +15,20 @@
 
 
 ## Abstract
-Software plays a critical role in modern society, but its energy consumption has become a growing concern. The Internet of Things (IoT) is an example of this challenge, with billions of connected devices worldwide relying on software to operate. These devices rely heavily on C programming language for its energy efficiency and low-level control of system resources. However, outside the IoT domain, other programming languages such as Python have become increasingly popular, despite being one of the least energy-efficient options. Given the significant impact of software on energy consumption, optimization efforts are essential to minimize energy consumption in both contexts: (i) in the IoT environment, where despite the use of an energy-efficient language such as C, the large number of devices leads to high energy consumption; and (ii) in the case of Python, due to its popularity and relatively higher energy consumption compared to other programming languages. Therefore, this paper evaluates 26 software optimization techniques implemented in C and their equivalents in Python, along with the impact of other compiler choices: the level of optimization in C and the use of the Nuitka compiler in Python. The results show the impact of each optimization technique, with more techniques having a positive effect in Python than in C. However, Python's overall energy consumption remains much higher, suggesting that further optimization is needed to close the gap between the two programming languages.
+Software plays a critical role in modern society, but its energy consumption has become a growing concern. The Internet of Things (IoT) is an example of this challenge, with billions of connected devices worldwide relying on software to operate. These devices rely heavily on C programming language for its energy efficiency and low-level control of system resources. However, outside the IoT domain, other programming languages such as Python have become increasingly popular, despite being one of the least energy-efficient options. Given the significant impact of software on energy consumption, optimization efforts are essential to minimize energy consumption in both contexts: (i) in the IoT environment, where despite the use of an energy-efficient language such as C, the large number of devices leads to high energy consumption; and (ii) in the case of Python, due to its popularity and relatively higher energy consumption compared to other programming languages. Therefore, this paper evaluates 26 software optimization techniques implemented in C and their equivalents in Python, along with the impact of other compiler choices: the level of optimization in C (O0 and O3) and the use of the Nuitka compiler in Python. The results show the impact of each optimization technique, with more techniques having a positive effect in Python than in C. However, Python's overall energy consumption remains much higher, suggesting that further optimization is needed to close the gap between the two programming languages.
 
 ## What is this?
-The repository contains the results of 26 optimization techniques implemented in C and Python, obtained using the hardware measurement instrument EET.
+This repository contains the results of 26 software optimization techniques implemented in C and their equivalents in Python, along with the impact of other compiler choices: the level of optimization in C (O0 and O3) and the use of the Nuitka compiler in Python.
+
+## How is structured?
+This repository contains one main folder: Programming-Languages.
+
+### Programming-Languages
+This folder contains an Excel file with the analysis of the 26 software optimization techniques implemented in C and their equivalents in Python, along with the impact of other compiler choices.
+
+Each programming language contains two folders:
+   - code: Code for the 26 optimization techniques.  
+   - reports: Results obtained from applying these techniques, along with the impact of other compiler choices.
 
 ## Contacts
 [Green Team Alarcos](https://greenteamalarcos.uclm.es/)

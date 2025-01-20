@@ -1,6 +1,6 @@
 import random
 
-REPS = 100000
+REPS = 100000000
 N = 50
 
 def swap(a, b):

@@ -1,6 +1,6 @@
 ### Python code
 
-There is a folder for each technique containing the following folders:
+There is a folder for each test case containing the following folders:
 - **Test1** (using the Python interpreter without applying the technique)
 - **Test2** (using the Python interpreter after applying the technique)
 - **Test1_Nuitka** (using the Nuitka compiler without applying the technique)

@@ -1,4 +1,4 @@
-REPS = 100000
+REPS = 100000000
 N = 60
 
 def test(array):

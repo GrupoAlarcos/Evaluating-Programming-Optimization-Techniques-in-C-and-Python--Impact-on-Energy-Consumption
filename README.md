@@ -21,9 +21,9 @@ Software plays a critical role in modern society, but its energy consumption has
 This repository contains the results of 26 software optimization techniques implemented in C and their equivalents in Python, along with the impact of other compiler choices: the level of optimization in C (O0 and O3) and the use of the Nuitka compiler in Python.
 
 ## How is structured?
-This repository contains one main folder: `Programming-Languages`.
+This repository contains one main folder: `programming_languages`.
 
-### Programming-Languages
+### programming_languages
 This folder contains two Excel files: the first includes the analysis of the 26 software optimization techniques implemented in C and their equivalents in Python, along with the impact of other compiler choices; the second file contains the Mann-Whitney U Test analysis comparing the programming languages C and Python.
 
 Each programming language contains two folders:

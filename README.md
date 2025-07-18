@@ -15,16 +15,25 @@
 
 
 ## Abstract
-Software plays a critical role in modern society, but its energy consumption has become a growing concern. The internet of things (IoT) exemplifies this challenge, with billions of devices relying on C programming language (PL) for energy efficiency and low-level system control. However, outside the IoT domain, other PLs such as Python have become increasingly popular, despite being one of the least energy-efficient options. Given the significant impact of software on energy consumption, optimization efforts are essential to minimize energy consumption in both contexts: (i) in the IoT environment, where despite the use of an energy-efficient language such as C, the large number of devices leads to high energy consumption; and (ii) in the case of Python, due to its popularity and relatively higher energy consumption compared to other PLs. Therefore, this paper evaluates the energy impact of 26 optimization techniques implemented in C and their equivalents in Python, along with the impact of compiler choices: the level of optimization in C (O0 and O3) and the use of the Nuitka compiler in Python. The results show a representative set of optimization techniques with a positive impact on energy, with a higher number of techniques with a positive effect in Python than in C. However, the overall energy consumption in Python is still much higher than in C, suggesting that more specific optimization effort is needed in this language to reduce the gap between them.
+Software plays a critical role in modern society, but its energy consumption is a growing concern. This issue is especially evident in the Internet of Things (IoT), which involves billions of devices operating under strict energy constraints, most of which rely on C because of its energy efficiency. Outside of IoT, Programming Languages (PL) like Python and Java have gained popularity despite being less energy-efficient, particularly Python.
+Optimization is therefore essential to reduce energy use in both contexts: (i) in the IoT, where the large number of devices causes high cumulative energy consumption despite using C; and (ii) for Python and Java, given their widespread adoption and higher energy demands.
+This paper evaluates the energy impact of 26 optimization techniques implemented in C, as well as their equivalents in Python and Java. Additionally, it analyzes the effects of different compiler and runtime configurations: optimization levels in C (-O0 and -O3), running Python with the CPython interpreter versus compiled with Nuitka, and executing Java in interpreter mode compared to Just-In-Time (JIT) compilation.
+The results show that Python achieved the best overall improvement, with 65\% of the optimization techniques resulting in energy savings, achieving reductions of up to 70.72\%. However, despite this high effectiveness, Python still exhibits the highest overall energy consumption among the three PLs, suggesting that its runtime characteristics inherently demand more energy.
 
 ## What is this?
-This repository contains the results of 26 software optimization techniques implemented in C and their equivalents in Python, along with the impact of other compiler choices: the level of optimization in C (O0 and O3) and the use of the Nuitka compiler in Python.
+This repository contains the results of 26 software optimization techniques implemented in C, Python, and Java.
+
+- **C**: Evaluated with two compiler optimization levels: `-O0` and `-O3`.  
+- **Python**: Tested using **CPython** and **Nuitka**.  
+- **Java**: Executed in two modes: with JIT enabled and with JIT disabled, using appropriate JVM flags to control JIT compilation.
+
+The study focuses on analyzing and comparing the **energy efficiency** of these optimization techniques across the three languages and different compilation and runtime strategies.
 
 ## How is structured?
 This repository contains one main folder: `programming_languages`.
 
 ### programming_languages
-This folder contains two Excel files: the first includes the analysis of the 26 software optimization techniques implemented in C and their equivalents in Python, along with the impact of other compiler choices; the second file contains the Mann-Whitney U Test analysis comparing the programming languages C and Python.
+This folder contains one excel with the analysis of the 26 software optimization techniques.
 
 Each programming language contains two folders:
    - `code`: Code for the 26 optimization techniques.  

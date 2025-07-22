@@ -1,15 +1,13 @@
-# Evaluating Programming Optimization Techniques in C and Python: Impact on Energy Consumption
+# Evaluating the Energy Efficiency of Optimization Techniques in C, Python, and Java
 [Carlos Pulido](https://orcid.org/0009-0008-8122-3500)  
 
 [Félix García](https://orcid.org/0000-0001-6460-0353)
 
 [Mª Ángeles Moraga](https://orcid.org/0000-0001-9165-7144)
 
-[Coral Calero](https://orcid.org/0000-0003-0728-4176)
-
 [Miguel Baños-González](https://orcid.org/0009-0000-5444-7631)
 
-[Jorge Cancho-Casado](https://orcid.org/0009-0004-4501-4657)
+[Juan Antonio Rico-Gallego](https://orcid.org/0000-0002-4264-7473)
 
 [Javier Corral-García](https://orcid.org/0000-0002-4682-9389)
 

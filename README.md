@@ -1,4 +1,4 @@
-# Evaluating the Energy Efficiency of Optimization Techniques in C, Python, and Java
+# Evaluating Programming Optimization Techniques in C and Python: Impact on Energy Consumption
 [Carlos Pulido](https://orcid.org/0009-0008-8122-3500)  
 
 [Félix García](https://orcid.org/0000-0001-6460-0353)
@@ -13,17 +13,13 @@
 
 
 ## Abstract
-Software plays a critical role in modern society, but its energy consumption is a growing concern. This issue is especially evident in the Internet of Things (IoT), which involves billions of devices operating under strict energy constraints, most of which rely on C because of its energy efficiency. Outside of IoT, Programming Languages (PL) like Python and Java have gained popularity despite being less energy-efficient, particularly Python.
-Optimization is therefore essential to reduce energy use in both contexts: (i) in the IoT, where the large number of devices causes high cumulative energy consumption despite using C; and (ii) for Python and Java, given their widespread adoption and higher energy demands.
-This paper evaluates the energy impact of 26 optimization techniques implemented in C, as well as their equivalents in Python and Java. Additionally, it analyzes the effects of different compiler and runtime configurations: optimization levels in C (-O0 and -O3), running Python with the CPython interpreter versus compiled with Nuitka, and executing Java in interpreter mode compared to Just-In-Time (JIT) compilation.
-The results show that Python achieved the best overall improvement, with 65\% of the optimization techniques resulting in energy savings, achieving reductions of up to 70.72\%. However, despite this high effectiveness, Python still exhibits the highest overall energy consumption among the three PLs, suggesting that its runtime characteristics inherently demand more energy.
+Software plays a critical role in modern society, but its energy consumption is a growing concern. The Internet of Things (IoT) exemplifies this challenge, with billions of devices relying on C for energy efficiency. Outside the IoT domain, Python is becoming increasingly popular despite being one of the least energy-efficient programming languages (PLs). Optimization is therefore essential to reduce energy consumption in both cases: (i) in the IoT, where despite the use of C, the large number of devices leads to high energy consumption, and (ii) in Python, due to its high energy consumption. This paper evaluates 23 optimization techniques in C and Python, taking into account the choice of compiler (O0/O3 in C and Interpreter/Nuitka in Python). The results show that more techniques have a positive impact (reducing energy) in Python than in C, but the energy consumption of Python remains significantly higher, requiring further optimizations to narrow the gap.
 
 ## What is this?
-This repository contains the results of 26 software optimization techniques implemented in C, Python, and Java.
+This repository contains the results of 26 software optimization techniques implemented in C and Python.
 
 - **C**: Evaluated with two compiler optimization levels: `-O0` and `-O3`.  
-- **Python**: Tested using **CPython** and **Nuitka**.  
-- **Java**: Executed in two modes: with JIT enabled and with JIT disabled, using appropriate JVM flags to control JIT compilation.
+- **Python**: Tested using **CPython** and **Nuitka**.
 
 The study focuses on analyzing and comparing the **energy efficiency** of these optimization techniques across the three languages and different compilation and runtime strategies.
 
@@ -39,3 +35,4 @@ Each programming language contains two folders:
 
 ## Contacts
 [Green Team Alarcos](https://greenteamalarcos.uclm.es/)
+

@@ -7,7 +7,7 @@
 
 [Miguel Baños-González](https://orcid.org/0009-0000-5444-7631)
 
-[Juan Antonio Rico-Gallego](https://orcid.org/0000-0002-4264-7473)
+[Jorge Cancho-Casado](https://orcid.org/0009-0004-4501-4657)
 
 [Javier Corral-García](https://orcid.org/0000-0002-4682-9389)
 
